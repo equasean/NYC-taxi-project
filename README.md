@@ -20,11 +20,48 @@ The dataset has records of yellow taxi trips in New York City for the year 2017.
 6. **Vendor Comparison**: Counting trip occurrences and comparing the average and most common fare amounts by vendor ID.
 
 ## Findings
-- Credit card payments were the most frequent, with an average tip amount of $2.73.
-- Passenger count showed no significant influence on the average tip amount for credit card payments.
-- Vendor 2 had a higher presence in the data compared to Vendor 1, with similar average fare amounts.
 
-## Conclusion
-This project offered valuable insights into the taxi industry in New York City, shedding light on operational aspects and customer behavior. It provided an opportunity to apply data analysis techniques to a real-world dataset and communicate findings effectively through visualizations.
+Here are my **Key Insights:**
+
+**Payment Types:**
+
+- The majority of trips are paid for using credit cards, followed by cash. Few trips resulted in no charge or disputes.
+
+- The average tip for trips paid for with a credit card is approximately $2.73, while cash tips aren't recorded in the system (average is $0.00).
+
+---
+
+**Vendor Analysis:**
+
+- Two vendors are represented in the dataset, with both having a very similar average total fare.
+
+- The dataset contains information on different passenger counts, with a noticeable number of rides having more than 2 passengers.
+
+---
+
+**Amounts and Distances:**
+
+- When sorting by trip_distance, some values seem unusually high, suggesting potential outliers or data entry errors.
+
+- In terms of total_amount, there are both unusually high and negative values, which require further investigation.
+
+--- 
+
+**Potential Variables for Predictive Modeling:**
+
+- Based on the analyses, trip_distance and total_amount could be the two most helpful variables for building a predictive model for NYC TLC. These variables capture key information about the trip's length and the fare, which are crucial for predicting outcomes like total fare or tip amount.
+
+- Additionally, understanding patterns in payment_type could be valuable, especially if NYC TLC wants to promote one payment method over another or assess tipping patterns.
+
+--- 
+
+## **My Conclusion:**
+
+- Before building predictive models, it's essential to handle potential outliers, especially in columns like trip_distance and total_amount.
+
+- Given the discrepancies observed in the dataset (e.g., high fares for zero-distance trips), data quality checks and preprocessing are crucial.
+
+- For a more in-depth analysis, considering temporal patterns (e.g., time of day, day of the week) could provide additional insights and enhance predictive modeling.
+
 
 Thank you for checking out my project!
